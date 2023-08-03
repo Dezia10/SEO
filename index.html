@@ -4,22 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Project</title>
   </head>
   <body>
-    <header>
+    <header class="sticky">
       <!-- Nav Bar goes here. -->
+      <nav>
+          <ul>
+              <li><a href=""> Home </li>   <!--need to add the links to this -->
+              <li><a href=""> Movies </li>
+              <li><a href=""> Tv-shows </li>
+              <li><a href=""> Login </li>
+          </ul>
+      </nav>
+      
     </header>
     <main>
       <!-- Main body goes.  -->
       <!-- 1.  Should include search bar and a button to filter
         movie title/ music/ quote -->
+      <div class = "search-section"> 
+        <div class= "search">
+          <form action = "">
+          <input type="text" id="search-entry" placeholder="search by movie or genre" required>
+          <button type="submit" onclick="search()"> Find </button>
+          </form>
+        </div>
 
-      <!-- 2. There should be a dropdown menu for options to filter 
+        <!-- 2. There should be a dropdown menu for options to filter 
         based on certain genres... -->
+      <!--
+        <div>
+          <button class = "dropdown" onclick = "display_menu()"> Genre </button>
+          <ul class = "menu">
+            <li> <a href = "#"> Comedy </a> </li>
+            <li> <a href = "#"> Rom-com </a> </li>
+            <li> <a href = "#"> Romance </a> </li>
+            <li> <a href = "#"> Horror </a> </li>
+            <li> <a href = "#"> Thriller </a> </li>
+          </ul>
+        </div>  
+        -->   
+    </div>
+
 
       <!-- 3 Beneath seach bar should include images with video title 
         or quotes generated or music searched -->
+        <section id= "page1-slider">
+            <div class ="page1-slider-box">
+              <div class ="page1-slider-img">
+                <img src = "images/pg.1.jpg" alt = "a movie poster">
+              </div>
+              <a href="#" class="page1-slider-overlay">
+                <i class= "fas fa-play"> </i>
+              </a>
+            </div>
+        </section>
+        
     </main>
     <footer>
       <!-- Copyright statement goes here / something  -->
