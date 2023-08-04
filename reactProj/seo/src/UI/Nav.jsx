@@ -1,16 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Nav.css";
 
 const Nav = () => {
   return (
-    <ul>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="favorites">Favorites</NavLink>
-      </li>
-    </ul>
+    <nav>
+      <ul className="sticky">
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="favorites">Favorites</NavLink>
+        </li>
+      </ul>
+    </nav>
     // <Routes>
     //   <Route path="/" element={<Home />}>
     //     <Route index element={<Home />} />
