@@ -1,0 +1,12 @@
+.home-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.home-wrapper input {
+  width: 900px;
+  max-width: 90%;
+  margin: 1rem 0;
+  margin-inline: auto;
+  padding: 1rem;
+  height: 1rem;
+}
