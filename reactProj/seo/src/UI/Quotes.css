@@ -1,0 +1,39 @@
+.quotes li {
+  list-style: none;
+  font-size: 2rem;
+  font-style: italic;
+  color: white;
+}
+.quotes {
+  width: 900px;
+  max-width: 80%;
+  margin-inline: auto;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #777;
+}
+.quotes p {
+  color: #000;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 1.2rem;
+}
+
+.quotes button {
+  margin: 20px 0;
+  outline: none;
+  padding: 1rem 0.5rem;
+  width: 80%;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.quotes button:hover,
+.quotes button:active {
+  background-color: black;
+  color: white;
+}
