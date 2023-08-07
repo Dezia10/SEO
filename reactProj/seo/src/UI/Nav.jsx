@@ -2,16 +2,19 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 
-const Nav = () => {
+const Nav = ({ isLoggedIn }) => {
+  console.log(isLoggedIn);
   return (
     <nav>
       <ul className="sticky">
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
-        <li>
-          <NavLink to="favorites">Favorites</NavLink>
-        </li>
+        {isLoggedIn && (
+          <li>
+            <NavLink to="favorites">Favorites</NavLink>
+          </li>
+        )}
       </ul>
     </nav>
     // <Routes>
